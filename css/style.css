@@ -10,6 +10,7 @@ button,label{
 h1{
     font-size: 48px;
     line-height: 125%;
+    margin: 0;
 }
 h2{
     font-size: 36px;

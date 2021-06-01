@@ -16,6 +16,9 @@ h2{
     font-size: 36px;
     line-height: 125%;
 }
+img{
+    border: 0;
+}
 textarea{
     overflow-y: scroll;
 }

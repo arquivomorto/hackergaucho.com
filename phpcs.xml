@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <description>phpcs customizado</description>
+    <rule ref="PSR2"/>
+    <exclude-pattern>/inc/vendor/*</exclude-pattern>
+    <rule ref="Generic.Commenting.Fixme"/>
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <!-- 79chars=dwm, 120chars=PSR2-->
+            <property name="lineLimit" value="79"/>
+            <property name="absoluteLineLimit" value="120"/>
+        </properties>
+    </rule>
+</ruleset>

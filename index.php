@@ -10,7 +10,7 @@ if ($section=='/') {
         'ORDER'=>['createdAt'=>'DESC']
     ];
     $posts=$db->select("post", "*", $where);
-    $canonicalUrl=GITHUB_URL;
+    $canonicalUrl=GITHUB_URL.'index.html';
     require 'view/index.php';
 } else {
     require 'postRead.php';

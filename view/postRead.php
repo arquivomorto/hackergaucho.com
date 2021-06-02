@@ -29,7 +29,8 @@ require 'header.php';
         $href=SITE_URL.'postDelete.php?id='.$post['id'];
         ?>
         <a onclick='return excluir("post");'
-        href="<?php print $href; ?>">Excluir</a>
+        href="<?php print $href; ?>">Excluir</a> /
+        <a href="logout.php">Sair</a>
     </p>
     <?php
     print nl2br($post['post']);

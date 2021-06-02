@@ -41,7 +41,7 @@ textarea{
 .formHorizontal input,
 .formHorizontal textarea{
     font-size: 24px;
-    max-width: calc(100% - 2px);
+    max-width: calc(100% - 12px);
     width: 100%;
 }
 .gray{

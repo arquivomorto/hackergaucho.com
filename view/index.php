@@ -8,7 +8,8 @@ require 'header.php';
     $href=SITE_URL.'postCreate.php';
     ?>
     <p class="center">
-        <a href="<?php print $href; ?>">Criar post</a>
+        <a href="<?php print $href; ?>">Criar post</a> /
+        <a href="logout.php">Sair</a>
     </p>
     <?php
     print '<ul>';

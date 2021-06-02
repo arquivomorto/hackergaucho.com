@@ -29,14 +29,14 @@ textarea{
 .container{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    width: 750px;
+    max-width: calc(100% - 20px);
+    width: 730px;
 }
 .containerMedio{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    width: 375px;
+    max-width: calc(100% - 20px);
+    width: 355px;
 }
 .formHorizontal input,
 .formHorizontal textarea{

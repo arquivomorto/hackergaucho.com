@@ -11,13 +11,13 @@ require 'header.php';
         <a href="<?php print $href; ?>">Criar post</a>
     </p>
     <?php
-    print '<ol>';
+    print '<ul>';
     $slug=require INC.'slug.php';
     foreach ($posts as $post) {
-        $href=SITE_URL.'blog/'.$slug($post['title']).'/'.$post['id'];
+        $href=SITE_URL.$slug($post['title']).'/'.$post['id'].'.html';
         $text=htmlentities($post['title']);
         print '<li><a href="'.$href.'">'.$text.'</a></li>';
     }
-    print '</ol>';
+    print '</ul>';
     ?>
 </div>

@@ -21,7 +21,7 @@ if ($post) {
             $data['updatedAt']=time();
             $db->update('post', $data, $where);
             $slug=require INC.'slug.php';
-            $url=SITE_URL.'blog/'.$slug($data['title']).'/'.$postId;
+            $url=SITE_URL.$slug($data['title']).'/'.$postId.'.html';
             header('Location: '.$url);
         }
     } else {

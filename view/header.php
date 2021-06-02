@@ -9,7 +9,8 @@
     <meta property="og:image"
     content="<?php print SITE_URL; ?>img/logo_white.png" /><!--min200x200 fb-->
     <meta property="og:description" content="Hacker Gaucho" />
-    <!-- url canônica <meta property="og:url" content=""/> -->
+    <!-- url canônica  -->
+    <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>
     <!-- twitter -->
     <meta name="twitter:title" content="Hacker Gaucho">
     <meta name="twitter:card" content="summary_large_image">
@@ -17,7 +18,8 @@
     content="<?php print SITE_URL; ?>img/logo_white.png">
     <meta name="twitter:site" content="@hackergaucho">
     <meta name="twitter:creator" content="@hackergaucho">
-    <!-- url canônica <meta name="twitter:url" content=""> -->
+    <!-- url canônica -->
+    <meta name="twitter:url" content="<?php print @$canonicalUrl; ?>">
     <!-- assets -->
     <?php $asset([
         "css/style.css",

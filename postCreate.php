@@ -38,7 +38,7 @@ if ($method == 'POST') {
         $postId=$db->id();
         if ($postId) {
             $slug=require INC.'slug.php';
-            $url=SITE_URL.'blog/'.$slug($data['title']).'/'.$postId;
+            $url=SITE_URL.$slug($data['title']).'/'.$postId.'.html';
             header('Location: '.$url);
         } else {
             $error[]='Erro desconhecido ao salvar no banco de dados';

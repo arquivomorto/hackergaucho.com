@@ -2,6 +2,7 @@
 <ruleset>
     <description>phpcs customizado</description>
     <rule ref="PSR2"/>
+    <exclude-pattern>/example.cfg.php</exclude-pattern>
     <exclude-pattern>/inc/vendor/*</exclude-pattern>
     <rule ref="Generic.Commenting.Fixme"/>
     <rule ref="Generic.Commenting.Todo"/>

@@ -1,6 +1,6 @@
 <?php
 if (!defined('ERROR')) {
-    die('blank space');
+    die('blank space baby');
 }
 // vars
 $db=require INC.'db.php';

@@ -32,6 +32,12 @@ textarea{
     max-width: 100%;
     width: 750px;
 }
+.containerMedio{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 375px;
+}
 .formHorizontal input,
 .formHorizontal textarea{
     font-size: 24px;

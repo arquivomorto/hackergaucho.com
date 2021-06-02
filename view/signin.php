@@ -6,7 +6,8 @@ require 'header.php';
     <?php
     require 'top.php';
     ?>
-    <form action="signin.php" method="post" class="formHorizontal">
+    <form action="<?php print SITE_URL ?>signin.php" class="formHorizontal"
+        method="post">
         <label for="email">Email</label><br>
         <input type="email" name="email" id="email"><br>
         <label for="password">Senha</label><br>

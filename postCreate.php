@@ -2,7 +2,7 @@
 require 'cfg.php';
 $method=$_SERVER["REQUEST_METHOD"];
 $error=false;
-if ($method == 'POST') {
+if ($method == 'POST' and $isAuth()) {
     // vars
     $normal=require INC.'normal.php';
     $valid=require INC.'valid.php';
@@ -45,6 +45,9 @@ if ($method == 'POST') {
             require 'view/error.php';
         }
     }
-} else {
+} elseif ($isAuth()) {
     require 'view/postCreate.php';
+} else {
+    $url=SITE_URL;
+    header('Location: '.$url);
 }

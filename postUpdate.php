@@ -7,7 +7,7 @@ $where=[
     'id'=>$postId
 ];
 $post=$db->get('post', '*', $where);
-if ($post) {
+if ($post and $isAuth()) {
     $method=$_SERVER["REQUEST_METHOD"];
     if ($method=='POST') {
         $normalPost=require HELPER.'postNormal.php';
@@ -24,8 +24,11 @@ if ($post) {
             $url=SITE_URL.$slug($data['title']).'/'.$postId.'.html';
             header('Location: '.$url);
         }
-    } else {
+    } elseif ($isAuth()) {
         require 'view/postUpdate.php';
+    } else {
+        $url=SITE_URL;
+        header('Location: '.$url);
     }
 } else {
     $error[]='Post não encontrado';

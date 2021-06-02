@@ -1,0 +1,2 @@
+<?php
+require '../signin.php';

@@ -6,7 +6,7 @@ $where=[
     'id'=>@$_GET['id']
 ];
 $postExiste=$db->has('post', $where);
-if ($postExiste) {
+if ($postExiste and $isAuth()) {
     // apaga o post
     $db->delete('post', $where);
     // redireciona para a home

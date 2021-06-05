@@ -8,11 +8,11 @@
     <!-- facebook -->
     <meta property="og:image"
     content="<?php print SITE_URL; ?>img/logo_white.png" /><!--min200x200 fb-->
-    <meta property="og:description" content="Hacker Gaucho" />
+    <meta property="og:description" content="<?php print htmlentities($title); ?>" />
     <!-- url canônica  -->
     <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>
     <!-- twitter -->
-    <meta name="twitter:title" content="<?php print htmlentities($title); ?>">
+    <meta name="twitter:description" content="<?php print htmlentities($title); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image"
     content="<?php print SITE_URL; ?>img/logo_white.png">

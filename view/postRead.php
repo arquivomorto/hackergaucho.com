@@ -39,4 +39,7 @@ require 'header.php';
     }
     print nl2br($post['post']);
     ?>
+        <p class="center">
+            <a href="<?php print SITE_URL;?>">Ir para a página principal</a>
+        </p>
 </div>

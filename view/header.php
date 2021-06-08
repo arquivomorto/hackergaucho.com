@@ -23,7 +23,7 @@
     <!-- assets -->
     <?php $asset([
         "css/style.css",
-        "js/jquery-3.4.1.min.js",
+        "js/jquery-1.12.4.min.js",
         "js/loadingoverlay.js",
         "js/script.js"
     ]); ?>

@@ -1,5 +1,5 @@
-# Blog Hacker Gaucho
-hackergaucho.com
+# Sobre
+Blog Hacker Gaucho
 
 ## Instalação
 

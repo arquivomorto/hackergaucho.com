@@ -3,28 +3,10 @@ require 'cfg.php';
 $method=$_SERVER["REQUEST_METHOD"];
 $error=false;
 if ($method == 'POST' and $isAuth()) {
-    // vars
-    $normal=require INC.'normal.php';
-    $valid=require INC.'valid.php';
-    $post=$_POST['post'];
-    $title=@$_POST['title'];
-    // normalizar o post
-    $data['title']=$normal($title, 'singleLineString');
-    $data['post']=trim($post);
-    //validar o post
-    $rules=[
-        'title'=>[
-            'minLength'=>1,
-            'maxLength'=>50,//SEO Google
-            'message'=>'O título precisa ter entre 1 e 50 caracteres'
-        ],
-        'post'=>[
-            'minLength'=>1,
-            'maxLength'=>1024,
-            'message'=>'O post precisa ter entre 1 e 1024 caracteres'
-        ]
-    ];
-    $error=$valid($data, $rules);
+    $normalPost=require HELPER.'postNormal.php';
+    $validPost=require HELPER.'postValid.php';
+    $data=$normalPost();
+    $error=$validPost($data);
     if ($error) {
         require 'view/error.php';
     } else {

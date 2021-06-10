@@ -26,22 +26,28 @@ return function ($userAgent = false) {
         // handle bots,spiders,crawlers,...
         $arr = $dd->getBot();
         $info=[
-            'name'=>@$arr['name'],
+            'client'=>@$arr['name'],
+            'clientVersion'=>'',
+            'device'=>'',
+            'os'=>'',
+            'osVersion'=>'',
             'type'=>'bot'
         ];
     } else {
-        $info['client'] = $dd->getClient();
-        $info['os'] = $dd->getOs();
-        $info['device'] = $dd->getDeviceName();//desktop/smartphone
-        $info['brand'] = $dd->getBrandName();//marca
-        $info['model'] = $dd->getModel();//modelo
-        // $info=[
-        //     device=ex: desktop, smartphone
-        //     name=ex: Firefox, Mobile Safari, Googlebot
-        //     os=ex: Ubuntu, iOS
-        //     type=ex: browser, bot
-        //     version=ex: 89.0, 11.0
-        // ];
+        $info=[
+            //client=ex: Firefox, Googlebot, Microsoft Edge, Mobile Safari
+            'client'=>@$dd->getClient()['name'],
+            //clientVersion=ex: 89.0, 11.0
+            'clientVersion'=>@$dd->getClient()['version'],
+            //device=ex: desktop, smartphone
+            'device'=>@$dd->getDeviceName(),
+            //os=ex:Windows
+            'os'=>@$dd->getOs()['name'],
+            //osVersion=ex:XP
+            'osVersion'=>@$dd->getOs()['version'],
+            //type=ex: browser, bot
+            'type'=>@$dd->getClient()['type']
+        ];
     }
     return $info;
 };

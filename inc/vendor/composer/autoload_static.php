@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit8777496413f09e80064982dc9d803e4b
 {
+    public static $files = array (
+        '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
@@ -14,6 +18,10 @@ class ComposerStaticInit8777496413f09e80064982dc9d803e4b
         'M' => 
         array (
             'Medoo\\' => 6,
+        ),
+        'D' => 
+        array (
+            'DeviceDetector\\' => 15,
         ),
     );
 
@@ -25,6 +33,10 @@ class ComposerStaticInit8777496413f09e80064982dc9d803e4b
         'Medoo\\' => 
         array (
             0 => __DIR__ . '/..' . '/catfan/medoo/src',
+        ),
+        'DeviceDetector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matomo/device-detector',
         ),
     );
 

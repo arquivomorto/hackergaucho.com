@@ -1,4 +1,7 @@
 <?php
+//Criado por @hackergaucho
+//v0.1.0 10jun2021
+
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;

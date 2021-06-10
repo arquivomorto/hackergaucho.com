@@ -1,6 +1,7 @@
 {
     "require": {
         "catfan/medoo": "^1.7",
-        "phpmailer/phpmailer": "^6.4"
+        "phpmailer/phpmailer": "^6.4",
+        "matomo/device-detector": "^4.2"
     }
 }

@@ -1,5 +1,5 @@
 <?php
-$title='Blog';
+$title='Hacker Gaucho';
 require 'header.php';
 ?>
 <div class="container">

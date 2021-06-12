@@ -31,6 +31,7 @@ return function ($userAgent = false) {
             'device'=>'',
             'os'=>'',
             'osVersion'=>'',
+            'referer'=>@$_SERVER['HTTP_REFERER'],
             'type'=>'bot'
         ];
     } else {
@@ -45,6 +46,7 @@ return function ($userAgent = false) {
             'os'=>@$dd->getOs()['name'],
             //osVersion=ex:XP
             'osVersion'=>@$dd->getOs()['version'],
+            'referer'=>@$_SERVER['HTTP_REFERER'],
             //type=ex: browser, bot
             'type'=>@$dd->getClient()['type']
         ];

@@ -31,6 +31,8 @@ if (!empty($ua['client'])) {
     $client=$ua['client'];
 }
 
+$rawClient=@$_SERVER['HTTP_USER_AGENT'];
+
 $body=<<<heredoc
 <b>data e hora da visita:</b>
 {$data}
@@ -43,6 +45,7 @@ $body=<<<heredoc
 
 <b>user agent:</b>
 {$ua['client']}
+{$rawClient}
 {$os}
 <b>tipo:</b>
 {$ua['type']}

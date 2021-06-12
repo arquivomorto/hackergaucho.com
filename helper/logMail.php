@@ -45,8 +45,10 @@ $body=<<<heredoc
 
 <b>user agent:</b>
 {$ua['client']}
-{$rawClient}
 {$os}
+<b>user-agent (raw):</b>
+{$rawClient}
+
 <b>tipo:</b>
 {$ua['type']}
 heredoc;

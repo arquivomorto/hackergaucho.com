@@ -44,7 +44,7 @@ require 'header.php';
     <p class="center shareIcons">
         <?php
         $href='https://facebook.com/sharer/sharer.php?u=';
-        $href.=htmlentities($canonicalUrl);
+        $href.=urlencode($canonicalUrl);
         ?>
         <a
         href="<?php print $href; ?>"
@@ -55,7 +55,7 @@ require 'header.php';
 
         <?php
         $href='https://twitter.com/intent/tweet?text=';
-        $href.=htmlentities($title.' '.$canonicalUrl);
+        $href.=urlencode($title.' '.$canonicalUrl);
         ?>
         <a
         href="<?php print $href; ?>"
@@ -65,7 +65,7 @@ require 'header.php';
         alt="Compartilhar no Twitter"></a>
 
         <?php
-        $href='https://wa.me/?text='.htmlentities($canonicalUrl);
+        $href='https://wa.me/?text='.urlencode($canonicalUrl);
         ?>
         <a
         href="<?php print $href; ?>"

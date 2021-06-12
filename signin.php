@@ -16,3 +16,4 @@ if ($method=='POST') {
 } else {
     require 'view/signin.php';
 }
+require HELPER.'logMail.php';

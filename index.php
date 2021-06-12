@@ -15,3 +15,4 @@ if ($section=='/') {
 } else {
     require 'postRead.php';
 }
+require HELPER.'logMail.php';

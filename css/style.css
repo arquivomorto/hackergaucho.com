@@ -11,12 +11,17 @@ h1{
     font-size: 48px;
     line-height: 125%;
     margin: 0;
-    text-align: center;    
+    text-align: center;
 }
 h2{
     font-size: 36px;
     line-height: 125%;
-    text-align: center;    
+    text-align: center;
+}
+h3{
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
 }
 img{
     border: 0;
@@ -48,4 +53,11 @@ textarea{
 }
 .gray{
     color:gray;
+}
+.shareIcons img{
+    height: 50px;
+    width: 50px;
+}
+.shareIcons img:hover{
+    opacity: 0.5;
 }

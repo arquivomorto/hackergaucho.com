@@ -39,7 +39,42 @@ require 'header.php';
     }
     print nl2br($post['post']);
     ?>
-        <p class="center">
-            <a href="<?php print SITE_URL;?>">Página principal</a>
-        </p>
+    <h3>Compartilhar</h3>
+    <!-- by http://www.sharelinkgenerator.com/ -->
+    <p class="center shareIcons">
+        <?php
+        $href='https://facebook.com/sharer/sharer.php?u=';
+        $href.=htmlentities($canonicalUrl);
+        ?>
+        <a
+        href="<?php print $href; ?>"
+        target="_blank"
+        title="Compartilhar no Facebook"><img
+        src="<?php print SITE_URL.'img/facebook.svg' ?>"
+        alt="Compartilhar no Facebook"></a>
+
+        <?php
+        $href='https://twitter.com/intent/tweet?text=';
+        $href.=htmlentities($title.' '.$canonicalUrl);
+        ?>
+        <a
+        href="<?php print $href; ?>"
+        target="_blank"
+        title="Compartilhar no Twitter"><img
+        src="<?php print SITE_URL.'img/twitter.svg' ?>"
+        alt="Compartilhar no Twitter"></a>
+
+        <?php
+        $href='https://wa.me/?text='.htmlentities($canonicalUrl);
+        ?>
+        <a
+        href="<?php print $href; ?>"
+        target="_blank"
+        title="Compartilhar no Whatsapp"><img
+        src="<?php print SITE_URL.'img/whatsapp.svg' ?>"
+        alt="Compartilhar no Whatsapp"></a>
+    </p>
+    <p class="center">
+        <a href="<?php print SITE_URL;?>">Página principal</a>
+    </p>
 </div>

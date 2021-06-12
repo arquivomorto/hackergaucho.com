@@ -24,7 +24,7 @@ if (@!empty($ua['referer'])) {
     $referer.=htmlentities($ua['referer']).PHP_EOL;
 }
 
-$data= date("dMY h:i:s", time());
+$data= date("dMY H:i:s", time());
 
 $client='Desconhecido';
 if (!empty($ua['client'])) {

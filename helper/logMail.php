@@ -6,10 +6,7 @@ $ip=require INC.'ip.php';
 $mail=require INC.'mail.php';
 $ua=require INC.'ua.php';
 
-$ie6='Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)';
-$google='Googlebot/2.1 (+http://www.googlebot.com/bot.html)';
-
-$ua=$ua($google);
+$ua=$ua();
 
 $os=null;
 if (@!empty($ua['os'])) {
@@ -47,5 +44,5 @@ $body=<<<heredoc
 heredoc;
 $body=nl2br($body);
 $subject=$ip.' visitou o HG';
-$to='email@email.com';
+$to=MAIL_FROM;
 $mail($body, $subject, $to);

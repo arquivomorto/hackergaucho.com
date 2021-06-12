@@ -54,10 +54,10 @@ textarea{
 .gray{
     color:gray;
 }
+.imageHover img:hover{
+    opacity: 0.5;
+}
 .shareIcons img{
     height: 50px;
     width: 50px;
-}
-.shareIcons img:hover{
-    opacity: 0.5;
 }

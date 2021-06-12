@@ -41,7 +41,7 @@ require 'header.php';
     ?>
     <h3>Compartilhar</h3>
     <!-- by http://www.sharelinkgenerator.com/ -->
-    <p class="center shareIcons">
+    <p class="center shareIcons imageHover">
         <?php
         $href='https://facebook.com/sharer/sharer.php?u=';
         $href.=urlencode($canonicalUrl);

@@ -26,6 +26,11 @@ if (@!empty($ua['referer'])) {
 
 $data= date("dMY h:i:s", time());
 
+$client='Desconhecido';
+if (!empty($ua['client'])) {
+    $client=$ua['client'];
+}
+
 $body=<<<heredoc
 <b>data e hora da visita:</b>
 {$data}
@@ -43,6 +48,6 @@ $body=<<<heredoc
 {$ua['type']}
 heredoc;
 $body=nl2br($body);
-$subject=$ip.' visitou o HG';
+$subject=$client.' visitou o HG ('.$ip.')';
 $to=MAIL_FROM;
 $mail($body, $subject, $to);

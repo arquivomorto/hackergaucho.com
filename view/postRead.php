@@ -39,9 +39,10 @@ require 'header.php';
     }
     print nl2br($post['post']);
     ?>
-    <h3>Compartilhar</h3>
+    <hr>
     <!-- by http://www.sharelinkgenerator.com/ -->
-    <p class="center shareIcons imageHover">
+    <p class="center socialIcons imageHover">
+        Compartilhe<br>
         <?php
         $href='https://facebook.com/sharer/sharer.php?u=';
         $href.=urlencode($canonicalUrl);
@@ -50,7 +51,7 @@ require 'header.php';
         href="<?php print $href; ?>"
         target="_blank"
         title="Compartilhar no Facebook"><img
-        src="<?php print SITE_URL.'img/facebook.svg' ?>"
+        src="<?php print SITE_URL.'img/facebook.svg?v2' ?>"
         alt="Compartilhar no Facebook"></a>
 
         <?php
@@ -77,4 +78,5 @@ require 'header.php';
     <p class="center">
         <a href="<?php print SITE_URL;?>">Página principal</a>
     </p>
+    <?php require 'seguir.php'; ?>
 </div>

@@ -23,6 +23,13 @@ h3{
     line-height: 125%;
     text-align: center;
 }
+hr{
+    border: none;
+    border-top: 1px dashed black;
+    display: block;
+    margin: 10px auto;
+    max-width: 75%;
+}
 img{
     border: 0;
 }
@@ -57,7 +64,7 @@ textarea{
 .imageHover img:hover{
     opacity: 0.5;
 }
-.shareIcons img{
-    height: 50px;
-    width: 50px;
+.socialIcons img{
+    height: 48px;
+    width: 48px;
 }

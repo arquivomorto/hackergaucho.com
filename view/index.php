@@ -22,5 +22,5 @@ require 'header.php';
         print '<li><a href="'.$href.'">'.$text.'</a></li>';
     }
     print '</ul>';
-    ?>
+    require 'seguir.php'; ?>
 </div>

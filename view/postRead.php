@@ -40,9 +40,9 @@ require 'header.php';
     print nl2br($post['post']);
     ?>
     <hr>
+    <h3>Compartilhe</h3>
     <!-- by http://www.sharelinkgenerator.com/ -->
     <p class="center socialIcons imageHover">
-        Compartilhe<br>
         <?php
         $href='https://facebook.com/sharer/sharer.php?u=';
         $href.=urlencode($canonicalUrl);

@@ -27,8 +27,7 @@ hr{
     border: none;
     border-top: 1px dashed black;
     display: block;
-    margin: 10px auto;
-    max-width: 75%;
+    margin: 10px 0px;
 }
 img{
     border: 0;

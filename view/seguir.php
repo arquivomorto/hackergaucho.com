@@ -1,6 +1,6 @@
 <hr>
+<h3>Nas redes sociais</h3>
 <p class="center socialIcons imageHover">
-    Nas redes sociais<br>
     <?php
     $href='https://github.com/hackergaucho';
     ?>

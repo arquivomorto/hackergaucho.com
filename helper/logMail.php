@@ -32,6 +32,7 @@ if ($country) {
         'createdAt'=>time(),
         'language'=>$language
     ];
+    $db->insert("ip", $data);
 }
 
 $method=null;

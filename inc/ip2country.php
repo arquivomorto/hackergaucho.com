@@ -1,20 +1,17 @@
 <?php
 //Criado por @hackergaucho
-//v0.1.0 14jun2021
+//v0.1.0 14jun2021 com rdap e 127.0.0.1 = US
 
 return function ($ip) {
-    // require_once __DIR__.'/src/whois.main.php';
-    // $whois = new Whois();
-    // $r = $whois->Lookup($ip);
-    // $country=@$r['regrinfo']['owner']['address']['country'];
-    // if (!$country) {
-    //     $country=@$r['regrinfo']["network"]['country'];
-    // }
-    $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
-    $country=@$details->country;//ISO 3166-2
-    if ($country) {
-        return $country;
+    if ($ip=='127.0.0.1') {
+        return 'US';
     } else {
-        return 'US';//failback
+        $str=@file_get_contents('https://rdap.org/ip/'.$ip);
+        $country=@json_decode($str, true)['country'];
+        if (strlen($country)==2 and ctype_alpha($country)) {
+            return $country;
+        } else {
+            null;
+        }
     }
 };

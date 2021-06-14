@@ -15,6 +15,7 @@ if ($post) {
     $canonicalUrl=GITHUB_URL.$slug($post['title']).'/'.$postId.'.html';
     require 'view/postRead.php';
 } else {
+    http_response_code(404);
     $error[]='Post não encontrado';
     require 'view/error.php';
 }

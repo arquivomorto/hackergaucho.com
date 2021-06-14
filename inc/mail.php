@@ -18,6 +18,6 @@ return function ($body, $subject, $to) {
     $mail->addAddress($to); //email do destinatário
     $mail->isHTML(true);
     $mail->Subject = $subject;
-    $mail->Body = $body;
+    $mail->Body = utf8_decode($body);
     return $mail->send();
 };

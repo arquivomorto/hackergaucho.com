@@ -8,6 +8,12 @@ $ua=require INC.'ua.php';
 
 $ua=$ua();
 
+$method=null;
+if (@!empty($ua['method'])) {
+    $method=PHP_EOL.'<b>método:</b>'.PHP_EOL;
+    $method.=$ua['method'].PHP_EOL;
+}
+
 $os=null;
 if (@!empty($ua['os'])) {
     $os=PHP_EOL.'<b>sistema operacional:</b>'.PHP_EOL;
@@ -24,6 +30,7 @@ if (@!empty($ua['referer'])) {
     $referer.=htmlentities($ua['referer']).PHP_EOL;
 }
 
+
 $data= date("dMY H:i:s", time());
 
 $client='Desconhecido';
@@ -36,7 +43,7 @@ $rawClient=@$_SERVER['HTTP_USER_AGENT'];
 $body=<<<heredoc
 <b>data e hora da visita:</b>
 {$data}
-
+{$method}
 <b>url visitada:</b>
 {$url}
 {$referer}

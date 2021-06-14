@@ -1,4 +1,8 @@
 <?php
+// incs
+$db=require INC.'db.php';
+$country2language=require INC.'country2language.php';
+// vars
 $url=$_SERVER["REQUEST_SCHEME"].'://';
 $url.=$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
 $url=htmlentities($url);
@@ -7,6 +11,28 @@ $mail=require INC.'mail.php';
 $ua=require INC.'ua.php';
 
 $ua=$ua();
+
+$where=[
+    'ip'=>$ip
+];
+$country=$db->get('ip', 'country', $where);
+// verificar se o ip existe
+if ($country) {
+    $language=$country2language($country);
+} else {
+    $ipType=require INC.'ipType.php';
+    $ip2country=require INC.'ip2country.php';
+    $country=$ip2country($ip);
+    $language=$country2language($country);
+    // salva o ip
+    $data=[
+        'ip'=>$ip,
+        'type'=>$ipType($ip),
+        'country'=>$country,
+        'createdAt'=>time(),
+        'language'=>$language
+    ];
+}
 
 $method=null;
 if (@!empty($ua['method'])) {
@@ -60,6 +86,7 @@ $body=<<<heredoc
 {$ua['type']}
 heredoc;
 $body=nl2br($body);
-$subject=$client.' visitou o HG ('.$ip.')';
+$language=mb_strtoupper($language);
+$subject=$client.' visitou o HG ('.$ip.' - '.$country.'/'.$language.')';
 $to=MAIL_FROM;
 $mail($body, $subject, $to);

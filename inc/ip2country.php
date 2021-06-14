@@ -10,6 +10,7 @@ return function ($ip) {
     $whois = new Whois();
     $r = $whois->Lookup($ip);
     $country=@$r['regrinfo']['owner']['address']['country'];
+    die(var_dump($country));
     if (!$country) {
         $country=@$r['regrinfo']["network"]['country'];
     }

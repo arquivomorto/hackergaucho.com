@@ -3,6 +3,9 @@
 //v0.1.0 14jun2021
 
 return function ($ip) {
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
     require_once __DIR__.'/src/whois.main.php';
     $whois = new Whois();
     $r = $whois->Lookup($ip);

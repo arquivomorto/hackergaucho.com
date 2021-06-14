@@ -14,7 +14,7 @@ define("SITE_NAME", 'Hacker Gaucho');
 define('SITE_URL', 'http://root.local/');
 define('ROOT', __DIR__.'/');
 
-if (MAINTENANCE_MODE) {
+if (MAINTENANCE_MODE and php_sapi_name()<>'cli') {
     die('maitenance mode');
 }
 

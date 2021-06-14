@@ -87,6 +87,6 @@ $body=<<<heredoc
 heredoc;
 $body=nl2br($body);
 $language=mb_strtoupper($language);
-$subject=$client.' visitou o HG ('.$ip.' - '.$country.'/'.$language.')';
+$subject=$country.'/'.$language.' visitou o HG ('.$ip.')';
 $to=MAIL_FROM;
 $mail($body, $subject, $to);

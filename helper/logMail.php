@@ -67,6 +67,8 @@ if (!empty($ua['client'])) {
 
 $rawClient=@$_SERVER['HTTP_USER_AGENT'];
 
+$hostDoIp=gethostbyaddr($ip);
+
 $body=<<<heredoc
 <b>data e hora da visita:</b>
 {$data}
@@ -76,6 +78,9 @@ $body=<<<heredoc
 {$referer}
 <b>ip do visitante:</b>
 {$ip}
+
+<b>host do ip:</b>
+{$hostDoIp}
 
 <b>user agent:</b>
 {$ua['client']}

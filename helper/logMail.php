@@ -87,7 +87,10 @@ $body=<<<heredoc
 {$ua['type']}
 heredoc;
 $body=nl2br($body);
-$language=mb_strtoupper($language);
+$country2name=require INC.'country2name.php';
+$country=$country2name($country);
+$language2name=require INC.'language2name.php';
+$language=$language2name($language);
 $subject=$client.' '.$country.'/'.$language.' ('.$ip.')';
 $to=MAIL_FROM;
 $mail($body, $subject, $to);

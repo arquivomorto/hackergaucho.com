@@ -1,6 +1,12 @@
 # Sobre
 Blog Hacker Gaucho
 
+## Requerimentos
+1. Ubuntu Bionic
+1. PHP 7.2.24
+1. SQLite e extensões PHP associadas
+
+
 ## Instalação
 
 1. clonar o repositório na raiz do servidor "localhost"

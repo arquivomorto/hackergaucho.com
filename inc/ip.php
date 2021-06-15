@@ -1,6 +1,6 @@
 <?php
 //Criado por @hackergaucho
-//v0.1.0 14nov2028 procedural
+//v0.1.0 14nov2021 procedural
 //v1.0.0 10jun2021 funcional com comentários
 
 $ip=function () {

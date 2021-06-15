@@ -1,27 +1,44 @@
 /* tags */
+a:hover{
+    color:#A6130A;
+    text-decoration: underline;
+}
+a,a:visited{
+    color:#C0170C;
+    font-weight: 700;
+    text-decoration: none;
+}
 body{
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 150%;
+    color: #333333;
+    font-family: opensans, helvetica, arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 32px;
 }
 button,label{
     cursor: pointer;
 }
 h1{
-    font-size: 48px;
-    line-height: 125%;
-    margin: 0;
-    text-align: center;
+    color: #000000;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.15625rem;
+    line-height: 4rem;
 }
 h2{
-    font-size: 36px;
-    line-height: 125%;
-    text-align: center;
+    color: #111111;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 36px;
 }
-h3{
-    font-size: 24px;
-    line-height: 125%;
-    text-align: center;
+h3,strong{
+    color:#333333;
+    font-size:20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 32px;
 }
 hr{
     border: none;
@@ -43,7 +60,7 @@ textarea{
     display: block;
     margin: 0 auto;
     max-width: calc(100% - 20px);
-    width: 730px;
+    width: 500px;
 }
 .containerMedio{
     display: block;

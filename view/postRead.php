@@ -11,6 +11,7 @@ require 'header.php';
             <?php print date("d.M.Y", $post['createdAt']); ?>
         </b>
     </p>
+    <hr>
     <?php
     if ($isAuth()) {
         ?>
@@ -40,7 +41,7 @@ require 'header.php';
     print nl2br($post['post']);
     ?>
     <hr>
-    <h3>Compartilhe</h3>
+    <h3 class="center">Compartilhar</h3>
     <!-- by http://www.sharelinkgenerator.com/ -->
     <p class="center socialIcons imageHover">
         <?php

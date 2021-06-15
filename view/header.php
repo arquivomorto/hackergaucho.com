@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?php print htmlentities($title); ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; user-scalable=0" />
     <link rel="shortcut icon" href="<?php print SITE_URL; ?>favicon.ico">
     <!-- facebook min200x200 -->
     <meta property="og:image"

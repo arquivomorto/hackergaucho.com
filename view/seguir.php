@@ -1,5 +1,5 @@
 <hr>
-<h3>Nas redes sociais</h3>
+<h3 class="center">Nas redes sociais</h3>
 <p class="center socialIcons imageHover">
     <?php
     $href='https://github.com/hackergaucho';

@@ -98,4 +98,6 @@ $language2name=require INC.'language2name.php';
 $language=$language2name($language);
 $subject=$client.' '.$country.'/'.$language.' ('.$ip.')';
 $to=MAIL_FROM;
-$mail($body, $subject, $to);
+if ($ua['type']<>'bot') {
+    $mail($body, $subject, $to);
+}

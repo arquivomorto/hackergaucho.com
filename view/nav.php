@@ -12,7 +12,7 @@
         ?>
         <a href="<?php print SITE_URL;?>contact">Contato</a>
         /
-        <a href="<?php print SITE_URL;?>signin">Login</a>
+        <a href="<?php print SITE_URL;?>signin">Entrar</a>
         <?php
     }
     ?>

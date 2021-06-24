@@ -76,8 +76,5 @@ require 'header.php';
         src="<?php print SITE_URL.'img/whatsapp.svg' ?>"
         alt="Compartilhar no Whatsapp"></a>
     </p>
-    <p class="center">
-        <a href="<?php print SITE_URL;?>">Página principal</a>
-    </p>
-    <?php require 'seguir.php'; ?>
+    <?php require 'nav.php'; ?>
 </div>

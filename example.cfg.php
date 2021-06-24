@@ -5,7 +5,7 @@ define('ERROR', true);
 define('GITHUB_URL', 'https://hackergaucho.github.io/');
 define('HELPER', __DIR__.'/helper/');
 define('INC', __DIR__.'/inc/');
-define("MAIL_FROM", 'admin@admin.com');
+define("MAIL_FROM", 'admin@admin.admin');
 define('MAIL_TYPE', 'smtp');//'mail' com o postfix
 define('MAIL_HOST', '127.0.0.1');
 define('MAIL_PORT', '2525');//25 com o postfix
@@ -13,6 +13,7 @@ define("MAINTENANCE_MODE", 0);
 define("SITE_NAME", 'Hacker Gaucho');
 define('SITE_URL', 'http://root.local/');
 define('ROOT', __DIR__.'/');
+define('VIEW', __DIR__.'/view/');
 
 if (MAINTENANCE_MODE and php_sapi_name()<>'cli') {
     die('maitenance mode');

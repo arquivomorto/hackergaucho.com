@@ -13,7 +13,7 @@ if ($method=='POST') {
     $fromName=$data['name'];
     $fromMail=$data['email'];
     if (!$error and
-    $mail($body, $subject, $to, $fromName = false, $fromMail = false)) {
+    $mail($body, $subject, $to, $fromName, $fromMail)) {
         // mensagem enviada
         $msg='Mensagem enviada';
         require VIEW.'success.php';

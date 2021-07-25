@@ -36,9 +36,11 @@ require 'header.php';
             href="<?php print $href; ?>">Excluir</a> /
             <a href="<?php print SITE_URL; ?>logout.php">Sair</a>
         </p>
-        <div class="post">
         <?php
     }
+    ?>
+    <div class="post">
+    <?php
     print nl2br($post['post']);
     ?>
     </div><!--post-->
@@ -79,3 +81,4 @@ require 'header.php';
         alt="Compartilhar no Whatsapp"></a>
     </p>
     <?php require 'nav.php'; ?>
+    </div><!--container-->

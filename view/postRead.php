@@ -36,10 +36,12 @@ require 'header.php';
             href="<?php print $href; ?>">Excluir</a> /
             <a href="<?php print SITE_URL; ?>logout.php">Sair</a>
         </p>
+        <div class="post">
         <?php
     }
     print nl2br($post['post']);
     ?>
+    </div><!--post-->
     <hr>
     <h3 class="center">Compartilhar</h3>
     <!-- by http://www.sharelinkgenerator.com/ -->

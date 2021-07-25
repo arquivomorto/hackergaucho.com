@@ -91,6 +91,9 @@ textarea{
 .imageHover img:hover{
     opacity: 0.5;
 }
+.post img{
+    border: 1px solid #c0c0c0;
+}
 .socialIcons img{
     height: 48px;
     width: 48px;

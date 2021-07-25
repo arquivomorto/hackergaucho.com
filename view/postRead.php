@@ -79,4 +79,3 @@ require 'header.php';
         alt="Compartilhar no Whatsapp"></a>
     </p>
     <?php require 'nav.php'; ?>
-</div>

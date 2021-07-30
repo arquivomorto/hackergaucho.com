@@ -22,10 +22,10 @@
     <meta name="twitter:url" content="<?php print @$canonicalUrl; ?>">
     <!-- assets -->
     <?php $asset([
-        "css/style.css",
+        //"css/style.css",
         "js/jquery-1.12.4.min.js",
         "js/loadingoverlay.js",
         "js/script.js"
     ]); ?>
 </head>
-<body>
+<body style="text-align:center;">

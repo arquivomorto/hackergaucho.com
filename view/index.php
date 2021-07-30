@@ -2,7 +2,7 @@
 $title='Hacker Gaucho';
 require 'header.php';
 ?>
-<div class="container">
+<div style="width:600px;margin:0 auto;text-align:left;max-width:100%;">
     <?php
     require 'top.php';
     $href=SITE_URL.'postCreate.php';

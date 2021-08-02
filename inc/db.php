@@ -1,6 +1,6 @@
 <?php
 //Criado por @hackergaucho
-//v0.1.0 30mai2021 com suporte a sqlite
+//v1.0.0 30mai2021 com suporte a sqlite
 
 require 'vendor/autoload.php';
 use Medoo\Medoo;

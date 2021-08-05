@@ -2,6 +2,7 @@
 require 'cfg.php';
 $method=$_SERVER["REQUEST_METHOD"];
 if ($method=='POST') {
+    require HELPER.'logMail.php';
     $email=@$_POST['email'];
     $password=@$_POST['password'];
     if ($email===ADMIN_EMAIL and $password===ADMIN_PASSWORD) {
@@ -19,4 +20,3 @@ if ($method=='POST') {
 } else {
     require VIEW.'signin.php';
 }
-require HELPER.'logMail.php';

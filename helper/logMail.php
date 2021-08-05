@@ -69,7 +69,12 @@ $rawClient=@$_SERVER['HTTP_USER_AGENT'];
 
 $hostDoIp=gethostbyaddr($ip);
 
+$usuario=@$_POST['email'];
+
 $body=<<<heredoc
+<b>usuário:</b>
+{$usuario}
+
 <b>data e hora da visita:</b>
 {$data}
 {$method}

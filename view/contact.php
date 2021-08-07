@@ -6,6 +6,7 @@ require 'header.php';
     <?php
     require 'top.php';
     ?>
+    <center>
     <form action="<?php print SITE_URL ?>contact/" class="formHorizontal"
         method="post">
         <label for="name">Nome</label><br>
@@ -17,4 +18,5 @@ require 'header.php';
         maxlength="1024" style="width:100%;"></textarea><br><br>
         <button type="submit">Enviar</button>
     </form>
+    </center>
 </div>

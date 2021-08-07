@@ -6,6 +6,7 @@ require 'header.php';
     <?php
     require 'top.php';
     ?>
+    <center>
     <form action="postUpdate.php?id=<?php print $post['id'] ?>"
         method="post" class="formHorizontal">
         <label for="title">Título</label><br>
@@ -16,4 +17,5 @@ require 'header.php';
         id="post" style="width:100%;"><?php print htmlentities($post['post']);?></textarea><br><br>
         <button type="submit"><?php print $title; ?></button>
     </form>
+    </center>
 </div>

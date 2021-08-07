@@ -6,6 +6,7 @@ require 'header.php';
     <?php
     require 'top.php';
     ?>
+    <center>
     <form action="postCreate.php" method="post" class="formHorizontal">
         <label for="title">Título</label><br>
         <input type="text" name="title" id="title" style="width:100%;"><br>
@@ -13,4 +14,5 @@ require 'header.php';
         <textarea name="post" rows="20" id="post" style="width:100%;"></textarea><br><br>
         <button type="submit"><?php print $title; ?></button>
     </form>
+    </center>
 </div>

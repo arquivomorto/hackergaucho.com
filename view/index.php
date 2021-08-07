@@ -8,10 +8,10 @@ require 'header.php';
     $href=SITE_URL.'postCreate.php';
     if ($isAuth()) {
         ?>
-        <p class="center">
+        <center><p class="center">
             <a href="<?php print $href; ?>">Criar post</a> /
             <a href="<?php print SITE_URL; ?>logout.php">Sair</a>
-        </p>
+        </p></center>
         <?php
     }
     print '<ul>';
@@ -21,6 +21,6 @@ require 'header.php';
         $text=htmlentities($post['title']);
         print '<li><a href="'.$href.'">'.$text.'</a></li>';
     }
-    print '</ul>';
-    require 'nav.php'; ?>
+    print '</ul><center>';
+    require 'nav.php'; ?></center>
 </div>

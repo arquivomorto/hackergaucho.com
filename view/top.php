@@ -1,4 +1,4 @@
-<div class="center top">
+<div class="top">
     <!--<a class="imageHover"
     href="<?php print SITE_URL; ?>"
     title="<?php print SITE_NAME; ?>">
@@ -7,6 +7,7 @@
     ?>
     <img src="<?php print $src; ?>" width="150" height="150"
     alt="<?php print SITE_NAME; ?>"></a>-->
+    <center>
     <?php
     if($title<>SITE_NAME){  
     ?>
@@ -20,4 +21,5 @@
         print '<h1>'.SITE_NAME.'</h1>';    
     }        
     ?>
+    </center>
 </div>

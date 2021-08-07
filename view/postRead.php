@@ -6,15 +6,18 @@ require 'header.php';
     <?php
     require 'top.php';
     ?>
-    <p class="center">
+    <center>
+    <p>
         <b>
             <?php print date("d.M.Y", $post['createdAt']); ?>
         </b>
     </p>
+    </center>
     <hr>
     <?php
     if ($isAuth()) {
         ?>
+        <center>
         <p class="center">
             <!-- criar post -->
             <?php
@@ -36,6 +39,7 @@ require 'header.php';
             href="<?php print $href; ?>">Excluir</a> /
             <a href="<?php print SITE_URL; ?>logout.php">Sair</a>
         </p>
+        </center>
         <?php
     }//fim do código autenticado
     ?>
@@ -45,8 +49,10 @@ require 'header.php';
     ?>
     </div><!--post-->
     <hr>
+    <center>
     <?php 
     //require 'compartilhar.php';
     require 'nav.php';
     ?>
+    </center>
     </div><!--container-->

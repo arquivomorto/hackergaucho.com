@@ -20,7 +20,8 @@ require 'header.php';
         $href=SITE_URL.$slug($post['title']).'/'.$post['id'].'.html';
         $text=htmlentities($post['title']);
         $date=date("d.M.Y", $post['createdAt']);
-        print '<li>'.$date.'<br> <a href="'.$href.'">'.$text.'</a><br><br></li>';
+        $link='<a href="'.$href.'">'.$text.'</a>';
+        print '<li>'.$date.'<br> <b>'.$link.'</b><br><br></li>';
     }
     print '</ul><center>';
     require 'nav.php'; ?></center>

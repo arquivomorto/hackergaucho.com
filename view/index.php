@@ -19,7 +19,7 @@ require 'header.php';
     foreach ($posts as $post) {
         $href=SITE_URL.$slug($post['title']).'/'.$post['id'].'.html';
         $text=htmlentities($post['title']);
-        $date=date("dMY", $post['createdAt']);
+        $date=date("d.M.Y", $post['createdAt']);
         print '<li>'.$date.'<br> <a href="'.$href.'">'.$text.'</a><br><br></li>';
     }
     print '</ul><center>';

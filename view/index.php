@@ -14,13 +14,14 @@ require 'header.php';
         </p></center>
         <?php
     }
-    print '<ul style="font-family:monospace; font-size:16px;">';
+    print '<ul>';
     $slug=require INC.'slug.php';
     foreach ($posts as $post) {
         $href=SITE_URL.$slug($post['title']).'/'.$post['id'].'.html';
         $text=htmlentities($post['title']);
         $date=date("dMY", $post['createdAt']);
-        print '<li>'.$date.' <a href="'.$href.'">'.$text.'</a></li>';
+        $date='<span style="font-family:monospace;">'.$date.'</span><br>';
+        print '<li>'.$date.' <a href="'.$href.'">'.$text.'</a><br><br></li>';
     }
     print '</ul><center>';
     require 'nav.php'; ?></center>

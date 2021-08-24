@@ -42,10 +42,32 @@ require 'header.php';
         </center>
         <?php
     }//fim do código autenticado
+    function text2link(
+        $str,
+        $target="_blank",
+        $prefix=null,
+        $sufix=null,
+        $onclick=null
+    ) {
+        //@gruber (71 chars)
+        //https://mathiasbynens.be/demo/url-regex
+        $regex=<<<heredoc
+#\b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))#iS
+heredoc;
+        if(!is_null($onclick)){
+            $onclick='onclick="'.$onclick.'" ';
+        }
+        $link='<a '.$onclick.'href="'.$prefix;
+        $link.='$0'.$sufix.'" target="{$target}">$0</a>';
+        return preg_replace($regex,$link,$str);
+    }    
     ?>
     <div class="post">
     <?php
-    print nl2br($post['post']);
+    $postStr=$post['post'];
+    $postStr=htmlentities($postStr);
+    $postStr=text2link($postStr);    
+    print nl2br($postStr);
     ?>
     </div><!--post-->
     <hr>

@@ -58,7 +58,7 @@ heredoc;
             $onclick='onclick="'.$onclick.'" ';
         }
         $link='<a '.$onclick.'href="'.$prefix;
-        $link.='$0'.$sufix.'" target="{$target}">$0</a>';
+        $link.='$0'.$sufix.'" target="'.$target.'">$0</a>';
         return preg_replace($regex,$link,$str);
     }    
     ?>

@@ -11,7 +11,7 @@ return function ($data) {
         ],
         'post'=>[
             'minLength'=>1,
-            'maxLength'=>1024,
+            'maxLength'=>2240,
             'message'=>'O post precisa ter entre 1 e 1024 caracteres'
         ]
     ];

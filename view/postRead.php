@@ -2,7 +2,7 @@
 $title=$post['title'];
 require 'header.php';
 ?>
-<div style="width:600px;margin:0 auto;text-align:left;max-width:100%;">
+<div style="width:640px;margin:0 auto;text-align:left;max-width:100%;">
     <?php
     require 'top.php';
     ?>

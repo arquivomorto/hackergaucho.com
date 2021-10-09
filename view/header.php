@@ -17,8 +17,7 @@
     <!-- summary = ratio 1:1, 144x144 min, 4096x4096 max -->
     <!-- summary_large_image = ratio 2:1 300x157 min, 4096x4096 max -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image"
-    content="<?php print SITE_URL; ?>img/logo_white_avatar_200.png">
+    <meta name="twitter:image" content="<?php print SITE_URL; ?>img/logo_white_avatar_200.png">
     <meta name="twitter:site" content="@devgaucho">
     <meta name="twitter:creator" content="@devgaucho">
     <meta name="twitter:url" content="<?php print @$canonicalUrl; ?>">

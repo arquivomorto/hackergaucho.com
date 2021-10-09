@@ -1,5 +1,2 @@
-definir através do cfg.php se vou enviar email ao logar
-proteger com captcha a caixa de comentários
-proteger com captcha a login
 reduzir o tamanho da thumb do twitter
 atualizar o example.cfg.php

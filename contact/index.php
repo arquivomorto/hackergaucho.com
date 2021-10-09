@@ -2,6 +2,8 @@
 require '../cfg.php';
 $method=$_SERVER["REQUEST_METHOD"];
 if ($method=='POST') {
+    // validar o captcha
+    require HELPER.'captchaValid.php';
     $contactNormal=require HELPER.'contactNormal.php';
     $contactValid=require HELPER.'contactValid.php';
     $data=$contactNormal();

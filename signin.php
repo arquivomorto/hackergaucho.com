@@ -2,6 +2,9 @@
 require 'cfg.php';
 $method=$_SERVER["REQUEST_METHOD"];
 if ($method=='POST') {
+    // validar o captcha
+    require HELPER.'captchaValid.php';
+    // enviar email de alerta
     require HELPER.'logMail.php';
     $email=@$_POST['email'];
     $password=@$_POST['password'];

@@ -104,5 +104,7 @@ $language=$language2name($language);
 $subject=$client.' '.$country.'/'.$language.' ('.$ip.')';
 $to=MAIL_FROM;
 if ($ua['type']<>'bot') {
-    $mail($body, $subject, $to);
+    if(MAIL_AFTER_SIGNIN){
+        $mail($body, $subject, $to);
+    }
 }

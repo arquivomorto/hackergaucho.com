@@ -1,5 +1,5 @@
 <?php
-$title='Página principal';
+$title='Blog';
 require 'header.php';
 ?>
 <div style="width:640px;margin:0 auto;text-align:left;max-width:100%;">

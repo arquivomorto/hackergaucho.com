@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title><?php print htmlentities($title); ?></title>
+    <title><?php print htmlentities($title).' - '.SITE_NAME; ?></title>
     <meta name="viewport" content="width=device-width; user-scalable=0" />
     <link rel="shortcut icon" href="<?php print SITE_URL; ?>favicon.ico">
     <!-- facebook min200x200 -->

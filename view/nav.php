@@ -2,7 +2,7 @@
     <?php
     if ($_SERVER["REQUEST_URI"]<>'/') {
         ?>
-        <a href="<?php print SITE_URL;?>">Página principal</a>
+        <a href="<?php print SITE_URL;?>">Blog</a>
         <?php
     }
     if (!$isAuth()) {

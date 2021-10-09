@@ -5,9 +5,9 @@
     <title><?php print htmlentities($title).' - '.SITE_NAME; ?></title>
     <meta name="viewport" content="width=device-width; user-scalable=0" />
     <link rel="shortcut icon" href="<?php print SITE_URL; ?>favicon.ico">
-    <!-- facebook min200x200 -->
+    <!-- facebook min200x200 https://developers.facebook.com/tools/debug/ -->
     <meta property="og:image"
-    content="<?php print SITE_URL; ?>img/capa_social_2.png" />
+    content="<?php print SITE_URL; ?>img/logo_white_avatar.png" />
     <meta property="og:title" content="<?php print htmlentities($title); ?>" />
     <!-- <meta property="og:description" content="<?php print SITE_NAME; ?>" /> -->
     <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>

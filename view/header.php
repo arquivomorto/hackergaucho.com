@@ -9,11 +9,11 @@
     <meta property="og:image"
     content="<?php print SITE_URL; ?>img/capa_social_2.png" />
     <meta property="og:title" content="<?php print htmlentities($title); ?>" />
-    <meta property="og:description" content="<?php print SITE_NAME; ?>" />
+    <!-- <meta property="og:description" content="<?php print SITE_NAME; ?>" /> -->
     <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>
     <!-- twitter https://cards-dev.twitter.com/validator -->
     <meta name="twitter:title" content="<?php print htmlentities($title); ?>">
-    <meta name="twitter:description" content="<?php print SITE_NAME; ?>">
+    <!-- <meta name="twitter:description" content="<?php print SITE_NAME; ?>"> -->
     <!-- summary = ratio 1:1, 144x144 min, 4096x4096 max -->
     <!-- summary_large_image = ratio 2:1 300x157 min, 4096x4096 max -->
     <meta name="twitter:card" content="summary">

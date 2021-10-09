@@ -13,7 +13,7 @@ define('MAIL_TYPE', 'smtp');//'mail' com o postfix
 define('MAIL_HOST', '127.0.0.1');
 define('MAIL_PORT', '2525');//25 com o postfix
 define("MAINTENANCE_MODE", 0);
-define("SITE_NAME", '@devgaucho');
+define("SITE_NAME", 'Gaucho');
 define('SITE_WIDTH_LARGE', '640px');
 define('SITE_WIDTH_SMALL', '295px');
 define('SITE_URL', 'http://localhost/hg/');

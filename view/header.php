@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="<?php print SITE_URL; ?>favicon.ico">
     <!-- facebook min200x200 https://developers.facebook.com/tools/debug/ -->
     <meta property="og:image"
-    content="<?php print SITE_URL; ?>img/logo_white_avatar.png" />
+    content="<?php print SITE_URL; ?>img/logo_white_avatar_200px.png" />
     <meta property="og:title" content="<?php print htmlentities($title); ?>" />
     <!-- <meta property="og:description" content="<?php print SITE_NAME; ?>" /> -->
     <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>

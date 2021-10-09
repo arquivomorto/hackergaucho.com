@@ -3,7 +3,7 @@ Blog Hacker Gaucho
 
 ## Requerimentos
 1. Ubuntu Bionic
-1. PHP 7.2.24
+1. PHP 7.2.24 ou superior
 1. SQLite e extensões PHP associadas
 
 

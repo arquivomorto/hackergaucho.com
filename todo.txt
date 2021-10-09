@@ -1,2 +1,1 @@
 reduzir o tamanho da thumb do twitter
-atualizar o example.cfg.php

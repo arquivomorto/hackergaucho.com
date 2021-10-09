@@ -11,14 +11,16 @@
     <meta property="og:title" content="<?php print htmlentities($title); ?>" />
     <meta property="og:description" content="<?php print SITE_NAME; ?>" />
     <meta property="og:url" content="<?php print @$canonicalUrl; ?>"/>
-    <!-- twitter -->
+    <!-- twitter https://cards-dev.twitter.com/validator -->
     <meta name="twitter:title" content="<?php print htmlentities($title); ?>">
     <meta name="twitter:description" content="<?php print SITE_NAME; ?>">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- summary = ratio 1:1, 144x144 min, 4096x4096 max -->
+    <!-- summary_large_image = ratio 2:1 300x157 min, 4096x4096 max -->
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:image"
     content="<?php print SITE_URL; ?>img/capa_social_2.png">
-    <meta name="twitter:site" content="@hackergaucho">
-    <meta name="twitter:creator" content="@hackergaucho">
+    <meta name="twitter:site" content="@devgaucho">
+    <meta name="twitter:creator" content="@devgaucho">
     <meta name="twitter:url" content="<?php print @$canonicalUrl; ?>">
     <!-- assets -->
     <?php $asset([

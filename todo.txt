@@ -1,2 +1,5 @@
-definir o tamanho da coluna central através do cfg.php
+
 definir se vou enviar email ao logar através do cfg.php
+proteger com captcha a caixa de comentários
+proteger com captcha a login
+reduzir o tamanho da thumb do twitter

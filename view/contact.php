@@ -2,7 +2,7 @@
 $title='Contato';
 require 'header.php';
 ?>
-<div style="width:600px;margin:0 auto;text-align:left;max-width:100%;">
+<div style="width:<?php print SITE_WIDTH_SMALL; ?>;margin:0 auto;text-align:left;max-width:100%;">
     <?php
     require 'top.php';
     ?>

@@ -9,17 +9,17 @@
     alt="<?php print SITE_NAME; ?>"></a>-->
     <center>
     <?php
-    if($title<>SITE_NAME){  
+    if($title<>SITE_NAME){
     ?>
     <a class="imageHover"
     href="<?php print SITE_URL; ?>"
     title="<?php print SITE_NAME; ?>">
-    <?php  
-        print '<h1>'.SITE_NAME.'</h1></a>';        
+    <?php
+        print '<h1>'.SITE_NAME.'</h1></a>';
         print '<h2>'.$title.'</h2>';
     }else{
-        print '<h1>'.SITE_NAME.'</h1>';    
-    }        
+        print '<h1>'.SITE_NAME.'</h1>';
+    }
     ?>
     </center>
 </div>

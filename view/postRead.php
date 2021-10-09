@@ -2,7 +2,7 @@
 $title=$post['title'];
 require 'header.php';
 ?>
-<div style="width:640px;margin:0 auto;text-align:left;max-width:100%;">
+<div style="width:<?php print SITE_WIDTH_LARGE; ?>;margin:0 auto;text-align:left;max-width:100%;">
     <?php
     require 'top.php';
     ?>
@@ -60,19 +60,19 @@ heredoc;
         $link='<a '.$onclick.'href="'.$prefix;
         $link.='$0'.$sufix.'" target="'.$target.'">$0</a>';
         return preg_replace($regex,$link,$str);
-    }    
+    }
     ?>
     <div class="post">
     <?php
     $postStr=$post['post'];
     $postStr=htmlentities($postStr);
-    $postStr=text2link($postStr);    
+    $postStr=text2link($postStr);
     print nl2br($postStr);
     ?>
     </div><!--post-->
     <hr>
     <center>
-    <?php 
+    <?php
     //require 'compartilhar.php';
     require 'nav.php';
     ?>
